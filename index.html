@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <script src="https://unpkg.com/pdf-lib@1.11.0"></script>
   <script src="https://unpkg.com/downloadjs@1.4.7"></script>
+      <title>Mosquito Larvae Hunter Certificate Generator</title>
   <style>
     body {
       width: 100vw;
@@ -41,6 +42,10 @@
 
 <body>
   <p>Click the button to fill form fields in an existing PDF document with <code>pdf-lib</code></p>
+  <input type="text" name="NameInput" class="question" id="NameInput" required autocomplete="off" />
+<label for="NameInput"><span>Participant Name</span></label>
+<input type="text" name="DateInput" class="question" id="DateInput" required autocomplete="off" />
+<label for="DateInput"><span>Completion Date</span></label>
   <button onclick="fillForm()">Generate and Download Certificate</button>
   <p class="small">(Your browser will download the resulting file)</p>
 </body>
