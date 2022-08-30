@@ -22,6 +22,13 @@
       margin: 25px;
     }
 
+    span {
+      font-family: helvetica;
+      font-size: 24px;
+      text-align: center;
+      margin: 25px;
+    }
+
     .small {
       font-family: helvetica;
       font-size: 18px;
@@ -81,7 +88,7 @@
     const pdfBytes = await pdfDoc.save()
 
     // Trigger the browser to download the PDF document
-    download(pdfBytes, "pdf-lib_form_creation_example.pdf", "application/pdf");
+    download(pdfBytes, "MLH-Certificate.pdf", "application/pdf");
   }
 </script>
 
